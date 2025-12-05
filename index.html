@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Prysmor Innovation - Premium web development agency specializing in modern, scalable digital solutions." />
+  <meta name="keywords" content="web development, agency, React, Next.js, custom websites" />
+  <title>Prysmor Innovation — Future Ready Digital Solutions</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="site-header">
+    <div class="header-bg"></div>
+    <div class="nav-wrap container">
+      
+      <!-- Logo - Replace with your own image -->
+      <a href="#home" class="logo">
+        <!-- OPTION 1: Image Logo (uncomment and add your logo.png) -->
+        <img src="new logo.png" alt="Prysmor Logo" class="logo-img"> 
+        
+        <!-- OPTION 2: Text Logo (current default) -->
+        <!-- <span class="logo-icon">P</span> -->
+        <!-- <span class="logo-text">Prysmor<span class="logo-dot">.</span></span> -->
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#portfolio" class="nav-link">Work</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        
+        <button class="theme-toggle" id="themeBtn" aria-label="Toggle Theme">
+          <i class="ph ph-moon"></i>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#portfolio" class="nav-link">Work</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-bg-glow"></div>
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content animate-on-scroll">
+            <h1 class="hero-title">
+              Transforming Vision Into <br>
+              <span class="gradient-text">Digital Reality</span>
+            </h1>
+            <p class="hero-description">
+              Prysmor Innovation develops premium, high-performance web applications built to scale with cutting-edge technology.
+            </p>
+            <div class="hero-cta">
+              <a href="#contact" class="btn btn-primary">
+                <span>Start Project</span>
+                <i class="ph ph-arrow-right"></i>
+              </a>
+              <a href="#portfolio" class="btn btn-ghost">
+                <span>View Portfolio</span>
+                <i class="ph ph-play"></i>
+              </a>
+            </div>
+
+            <!-- Stats -->
+            <div class="hero-stats">
+              <div class="stat-item">
+                <strong class="gradient-text">50+</strong>
+                <span>Projects Delivered</span>
+              </div>
+              <div class="stat-item">
+                <strong class="gradient-text">100%</strong>
+                <span>Client Satisfaction</span>
+              </div>
+              <div class="stat-item">
+                <strong class="gradient-text">24/7</strong>
+                <span>Support Available</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="hero-cards animate-on-scroll" style="animation-delay: 0.2s;">
+            <div class="card-glass floating" style="animation-delay: 0s;">
+              <div class="card-icon" style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">
+                <i class="ph ph-rocket-launch"></i>
+              </div>
+              <h4>Modern Tech Stack</h4>
+              <p>React, Next.js, Node.js & Cloud Native systems built for performance.</p>
+            </div>
+            
+            <div class="card-glass floating" style="animation-delay: 0.3s;">
+              <div class="card-icon" style="background: linear-gradient(135deg, #a855f7, #ec4899);">
+                <i class="ph ph-paint-brush"></i>
+              </div>
+              <h4>Premium Design</h4>
+              <p>Pixel-perfect UI with smart theme adaptability and responsive layouts.</p>
+            </div>
+
+            <div class="card-glass floating" style="animation-delay: 0.6s;">
+              <div class="card-icon" style="background: linear-gradient(135deg, #ec4899, #f43f5e);">
+                <i class="ph ph-lightning"></i>
+              </div>
+              <h4>Blazing Fast</h4>
+              <p>Optimized performance with 95+ Lighthouse scores guaranteed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="animate-on-scroll">
+            <span class="section-label">Who We Are</span>
+            <h2 class="section-title">Building Digital Excellence Since Day One</h2>
+            <p class="section-description">
+              We are a team of digital architects passionate about building software that matters. Prysmor Innovation was founded on the belief that great software is a perfect blend of engineering precision and artistic design.
+            </p>
+            <p class="text-muted" style="margin-top: 20px;">
+              We don't just write code; we build digital ecosystems that help your business thrive in the modern world. Every project is treated with the same dedication and attention to detail.
+            </p>
+
+            <div class="feature-list">
+              <div class="feature-item">
+                <i class="ph ph-check-circle"></i>
+                <span>100% Transparent Process</span>
+              </div>
+              <div class="feature-item">
+                <i class="ph ph-check-circle"></i>
+                <span>Mobile-First & Responsive</span>
+              </div>
+              <div class="feature-item">
+                <i class="ph ph-check-circle"></i>
+                <span>SEO Optimized from Ground Up</span>
+              </div>
+              <div class="feature-item">
+                <i class="ph ph-check-circle"></i>
+                <span>Long-term Support & Maintenance</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-visual animate-on-scroll" style="animation-delay: 0.2s;">
+            <div class="tech-stack-card">
+              <h4>Our Tech Stack</h4>
+              <div class="tech-grid">
+                <div class="tech-item">
+                  <span class="tech-badge">React</span>
+                </div>
+                <div class="tech-item">
+                  <span class="tech-badge">Next.js</span>
+                </div>
+                <div class="tech-item">
+                  <span class="tech-badge">Node.js</span>
+                </div>
+                <div class="tech-item">
+                  <span class="tech-badge">TypeScript</span>
+                </div>
+                <div class="tech-item">
+                  <span class="tech-badge">TailwindCSS</span>
+                </div>
+                <div class="tech-item">
+                  <span class="tech-badge">MongoDB</span>
+                </div>
+                <div class="tech-item">
+                  <span class="tech-badge">PostgreSQL</span>
+                </div>
+                <div class="tech-item">
+                  <span class="tech-badge">AWS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-label">What We Do</span>
+          <h2 class="section-title">Our Services</h2>
+          <p class="section-description">Engineering digital excellence tailored to your needs.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card animate-on-scroll">
+            <div class="service-icon" style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">
+              <i class="ph ph-globe"></i>
+            </div>
+            <h3>Static Websites</h3>
+            <p>Blazing fast, SEO-optimized sites perfect for portfolios, landing pages, and business showcases.</p>
+            <a href="#contact" class="service-link">
+              Learn More <i class="ph ph-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="service-card animate-on-scroll" style="animation-delay: 0.1s;">
+            <div class="service-icon" style="background: linear-gradient(135deg, #8b5cf6, #a855f7);">
+              <i class="ph ph-code"></i>
+            </div>
+            <h3>Custom Web Apps</h3>
+            <p>Complex dashboards, SaaS platforms, and internal tools built with React and modern frameworks.</p>
+            <a href="#contact" class="service-link">
+              Learn More <i class="ph ph-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="service-card animate-on-scroll" style="animation-delay: 0.2s;">
+            <div class="service-icon" style="background: linear-gradient(135deg, #a855f7, #ec4899);">
+              <i class="ph ph-shopping-cart"></i>
+            </div>
+            <h3>E-Commerce Solutions</h3>
+            <p>High-conversion stores with secure payment gateways, inventory management, and analytics.</p>
+            <a href="#contact" class="service-link">
+              Learn More <i class="ph ph-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="service-card animate-on-scroll" style="animation-delay: 0.3s;">
+            <div class="service-icon" style="background: linear-gradient(135deg, #ec4899, #f43f5e);">
+              <i class="ph ph-plug"></i>
+            </div>
+            <h3>API Integration</h3>
+            <p>Seamlessly connecting your business to Stripe, OpenAI, Google Maps, and third-party services.</p>
+            <a href="#contact" class="service-link">
+              Learn More <i class="ph ph-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="service-card animate-on-scroll" style="animation-delay: 0.4s;">
+            <div class="service-icon" style="background: linear-gradient(135deg, #f43f5e, #fb923c);">
+              <i class="ph ph-palette"></i>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>Wireframing, prototyping, and user testing to ensure intuitive and delightful experiences.</p>
+            <a href="#contact" class="service-link">
+              Learn More <i class="ph ph-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="service-card animate-on-scroll" style="animation-delay: 0.5s;">
+            <div class="service-icon" style="background: linear-gradient(135deg, #fb923c, #fbbf24);">
+              <i class="ph ph-cloud"></i>
+            </div>
+            <h3>Cloud Hosting</h3>
+            <p>Deployment, domain management, SSL certificates, and 24/7 server monitoring and support.</p>
+            <a href="#contact" class="service-link">
+              Learn More <i class="ph ph-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-label">Our Work</span>
+          <h2 class="section-title">Selected Projects</h2>
+          <p class="section-description">Recent work we're proud of.</p>
+        </div>
+
+        <div class="portfolio-grid">
+          <div class="portfolio-item animate-on-scroll">
+            <div class="portfolio-image">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Fintech Dashboard" loading="lazy">
+              <div class="portfolio-overlay">
+                <a href="#" class="portfolio-link" aria-label="View Project">
+                  <i class="ph ph-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>Fintech Dashboard</h3>
+              <p>Real-time analytics platform with advanced data visualization</p>
+              <div class="portfolio-tags">
+                <span class="tag">React</span>
+                <span class="tag">D3.js</span>
+                <span class="tag">Node.js</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item animate-on-scroll" style="animation-delay: 0.1s;">
+            <div class="portfolio-image">
+              <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=800&q=80" alt="Agency Portfolio" loading="lazy">
+              <div class="portfolio-overlay">
+                <a href="#" class="portfolio-link" aria-label="View Project">
+                  <i class="ph ph-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>Creative Agency Site</h3>
+              <p>Modern portfolio with smooth animations and interactions</p>
+              <div class="portfolio-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">GSAP</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item animate-on-scroll" style="animation-delay: 0.2s;">
+            <div class="portfolio-image">
+              <img src="https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&w=800&q=80" alt="E-commerce Platform" loading="lazy">
+              <div class="portfolio-overlay">
+                <a href="#" class="portfolio-link" aria-label="View Project">
+                  <i class="ph ph-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>E-Shop Platform</h3>
+              <p>Full-featured online store with payment integration</p>
+              <div class="portfolio-tags">
+                <span class="tag">Next.js</span>
+                <span class="tag">Stripe</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section bg-pattern">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-label">How We Work</span>
+          <h2 class="section-title">Our Process</h2>
+          <p class="section-description">A proven methodology for success.</p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step animate-on-scroll">
+            <div class="process-number">01</div>
+            <h3>Discovery</h3>
+            <p>We learn about your business, goals, and target audience to create a solid foundation.</p>
+          </div>
+
+          <div class="process-step animate-on-scroll" style="animation-delay: 0.1s;">
+            <div class="process-number">02</div>
+            <h3>Design</h3>
+            <p>Creating wireframes and mockups that align with your brand and user expectations.</p>
+          </div>
+
+          <div class="process-step animate-on-scroll" style="animation-delay: 0.2s;">
+            <div class="process-number">03</div>
+            <h3>Development</h3>
+            <p>Building clean, efficient code with regular updates and transparent communication.</p>
+          </div>
+
+          <div class="process-step animate-on-scroll" style="animation-delay: 0.3s;">
+            <div class="process-number">04</div>
+            <h3>Launch</h3>
+            <p>Thorough testing, deployment, and post-launch support to ensure smooth operations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-label">Testimonials</span>
+          <h2 class="section-title">What Clients Say</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card animate-on-scroll">
+            <div class="stars">
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+            </div>
+            <p>"Prysmor delivered beyond expectations. The website is fast, beautiful, and conversion rates increased by 40%!"</p>
+            <div class="testimonial-author">
+              <strong>Rajesh Kumar</strong>
+              <span>CEO, TechStart Inc</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card animate-on-scroll" style="animation-delay: 0.1s;">
+            <div class="stars">
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+            </div>
+            <p>"Professional team, excellent communication, and the final product exceeded our vision. Highly recommend!"</p>
+            <div class="testimonial-author">
+              <strong>Priya Sharma</strong>
+              <span>Founder, EcoShop</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card animate-on-scroll" style="animation-delay: 0.2s;">
+            <div class="stars">
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+            </div>
+            <p>"The attention to detail and modern design approach made all the difference. Worth every rupee!"</p>
+            <div class="testimonial-author">
+              <strong>Amit Patel</strong>
+              <span>Director, FinanceHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-label">Pricing</span>
+          <h2 class="section-title">Transparent Pricing</h2>
+          <p class="section-description">Choose the plan that fits your needs.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="pricing-card animate-on-scroll">
+            <div class="pricing-header">
+              <h3>Starter</h3>
+              <p>Perfect for small businesses</p>
+            </div>
+            <div class="pricing-price">
+              <span class="currency">₹</span>
+              <span class="amount">15,000</span>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="ph ph-check"></i> Static Website (5 Pages)</li>
+              <li><i class="ph ph-check"></i> Responsive Design</li>
+              <li><i class="ph ph-check"></i> Contact Form Integration</li>
+              <li><i class="ph ph-check"></i> SEO Basics</li>
+              <li><i class="ph ph-check"></i> 1 Month Support</li>
+            </ul>
+            <a href="#contact" class="btn btn-ghost btn-full">Get Started</a>
+          </div>
+
+          <div class="pricing-card featured animate-on-scroll" style="animation-delay: 0.1s;">
+            <div class="pricing-badge">Most Popular</div>
+            <div class="pricing-header">
+              <h3>Business</h3>
+              <p>For growing companies</p>
+            </div>
+            <div class="pricing-price">
+              <span class="currency">₹</span>
+              <span class="amount">60,000</span>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="ph ph-check"></i> Dynamic CMS / Admin Panel</li>
+              <li><i class="ph ph-check"></i> Database Integration</li>
+              <li><i class="ph ph-check"></i> User Authentication</li>
+              <li><i class="ph ph-check"></i> Payment Gateway</li>
+              <li><i class="ph ph-check"></i> 3 Months Support</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary btn-full">Get Started</a>
+          </div>
+
+          <div class="pricing-card animate-on-scroll" style="animation-delay: 0.2s;">
+            <div class="pricing-header">
+              <h3>Enterprise</h3>
+              <p>Custom solutions</p>
+            </div>
+            <div class="pricing-price">
+              <span class="amount">Custom</span>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="ph ph-check"></i> Custom SaaS Application</li>
+              <li><i class="ph ph-check"></i> Advanced API Integrations</li>
+              <li><i class="ph ph-check"></i> Cloud Architecture</li>
+              <li><i class="ph ph-check"></i> Dedicated Support Team</li>
+              <li><i class="ph ph-check"></i> Priority SLA Support</li>
+            </ul>
+            <a href="#contact" class="btn btn-ghost btn-full">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-card animate-on-scroll">
+          <div class="cta-content">
+            <h2>Ready to Scale Your Business?</h2>
+            <p>Let's build something exceptional together. Get a free consultation today.</p>
+          </div>
+          <a href="#contact" class="btn btn-white">
+            <span>Get a Quote</span>
+            <i class="ph ph-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info animate-on-scroll">
+            <span class="section-label">Get In Touch</span>
+            <h2 class="section-title">Let's Talk About Your Project</h2>
+            <p class="section-description">Fill out the form and we will get back to you within 24 hours.</p>
+            
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="ph ph-envelope"></i>
+                </div>
+                <div>
+                  <strong>Email</strong>
+                  <p>prysmorinnovation@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="ph ph-phone"></i>
+                </div>
+                <div>
+                  <strong>Phone</strong>
+                  <p>+91-7016432603</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="ph ph-map-pin"></i>
+                </div>
+                <div>
+                  <strong>Location</strong>
+                  <p>Ahemdabad, Gujarat</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="https://x.com/Prysmor_33?t=kk2jgs2USUSfE6nGsrVG4Q&s=09" class="social-link" aria-label="Twitter">
+                <i class="ph ph-twitter-logo"></i>
+              </a>
+              <!-- <a href="#" class="social-link" aria-label="LinkedIn">
+                <i class="ph ph-linkedin-logo"></i>
+              </a> -->
+              <a href="https://www.instagram.com/prysmor_33?igsh=eGY4cXBic2sxNWtm" class="social-link" aria-label="Instagram">
+                <i class="ph ph-instagram-logo"></i>
+              </a>
+              <!-- <a href="#" class="social-link" aria-label="GitHub">
+                <i class="ph ph-github-logo"></i>
+              </a> -->
+            </div>
+          </div>
+
+          <form class="contact-form animate-on-scroll" id="contactForm" style="animation-delay: 0.2s;">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" placeholder="Enter Name" required>
+              <span class="form-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="Email@example.com" required>
+              <span class="form-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91-XXXXXXXXXX">
+              <span class="form-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service Interested In *</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="static">Static Website</option>
+                <option value="webapp">Custom Web App</option>
+                <option value="ecommerce">E-Commerce</option>
+                <option value="api">API Integration</option>
+                <option value="design">UI/UX Design</option>
+                <option value="hosting">Cloud Hosting</option>
+              </select>
+              <span class="form-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Project Details *</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+              <span class="form-error"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Send Message</span>
+              <i class="ph ph-paper-plane-tilt"></i>
+            </button>
+
+            <div class="form-success" id="formSuccess">
+              <i class="ph ph-check-circle"></i>
+              <span>Thank you! We'll be in touch soon.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <span class="logo-icon">P</span>
+            <span class="logo-text">Prysmor<span class="logo-dot">.</span></span>
+          </div>
+          <p class="footer-description">Building digital excellence one project at a time.</p>
+          <div class="footer-social">
+            <a href="https://x.com/Prysmor_33?t=kk2jgs2USUSfE6nGsrVG4Q&s=09" aria-label="Twitter"><i class="ph ph-twitter-logo"></i></a>
+            <!-- <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a> -->
+            <a href="https://www.instagram.com/prysmor_33?igsh=eGY4cXBic2sxNWtm" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+            <!-- <a href="#" aria-label="GitHub"><i class="ph ph-github-logo"></i></a> -->
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">UI/UX Design</a></li>
+            <li><a href="#services">E-Commerce</a></li>
+            <li><a href="#services">Cloud Hosting</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:hello@prysmor.com">prysmorinnovation@gmail.com</a></li>
+            <li><a href="tel:+91">+91-7016432603</a></li>
+            <li>Ahemdabad, Gujarat</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Prysmor Innovation. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="ph ph-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
